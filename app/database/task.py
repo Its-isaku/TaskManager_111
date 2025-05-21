@@ -41,10 +41,10 @@ def insert(task_data):
         task_data["description"]
     )
     statement = """
-        INSERT INTO task (
+        INSERT INTO tasks (
             name,
             summary,
-            description,
+            description
         ) VALUES (?, ?, ?)
     """
     conn = get_db()
